@@ -11,7 +11,7 @@ module OmniAuth
         :authorize_url      => "https://www.etsy.com/oauth/signin"
       }
 
-      uid { user_hash['user_id'] }
+      uid { user_hash['user_id'].to_s }
 
       info do
         {
