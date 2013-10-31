@@ -41,7 +41,7 @@ module OmniAuth
 
       def prep_sandbox
         if options.sandbox
-          options.client_options.merge!(:site => "http://sandbox.openapi.etsy.com/v2")
+          options.client_options.merge!(:site => "https://sandbox.openapi.etsy.com/v2")
         end
       end
 
